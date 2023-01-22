@@ -235,3 +235,47 @@ li.header-social-item:hover{
     color: #fff;
     border: 2px solid #0D265F;
 }
+.section6{
+    background-color: #0D265F;
+}
+.goToContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.goToContact .contactText{
+    color: #fff;
+}
+#btnContact{
+    background-color: #fff;
+    color: #0D265F;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+#btnContact:after {
+    content: "";
+    background: #1e4091;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+#btnContact:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
