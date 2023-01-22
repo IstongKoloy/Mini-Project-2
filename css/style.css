@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;900&display=swap');
 
 *{
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 /* 
     orange: #F58229;
@@ -85,21 +84,22 @@ li.header-social-item:hover{
     text-decoration: none;
 }
 .sec-intro{
-    position: relative;
-    /* background-color: #fff; */
+    display: flex;
     background-image: url(../img/parking-image-Copy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
     margin: 3em 0;
     color: #4b5055;
+    align-items: center;
 }
 .sec-intro-greet{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
     text-align: left;
-    position: absolute;
-    top: 70px;
-    left: 5%;
+    align-items: flex-start;
 }
 .sec-intro-greet h1{
     font-size: 4em;
@@ -175,7 +175,7 @@ li.header-social-item:hover{
     font-weight: 900;
     letter-spacing: 5px;
     opacity: 0.5;
-    font-size: 3em;
+    font-size: 2m;
 }
 .sub-text strong{
     color:#0D265F;
