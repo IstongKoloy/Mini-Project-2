@@ -98,11 +98,10 @@ li.header-social-item:hover{
     flex-direction: column;
     /* justify-content: center; */
     width: 100%;
-    text-align: left;
     align-items: flex-start;
 }
 .sec-intro-greet h1{
-    font-size: 4em;
+    font-size: 3.5em;
     color: #4b5055;
 }
 .section2{
