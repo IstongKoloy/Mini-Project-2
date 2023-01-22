@@ -2,6 +2,9 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+// Animate on scroll activation
+AOS.init();
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function(){
     myFunction()
