@@ -20,34 +20,24 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 320px){
+    .sec-intro-greet h1 {
+        font-size: 2em;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .sec3-content .sec3-icons {
         display: flex;
         flex-direction: column;
     }
 }
-
-/* @media screen and (max-width: 820px) {
-    .sec-intro-greet {
-        width: 100%;
-        text-align: center;
-        align-items: center;
+@media screen and (max-width: 800px) {
+    #sub-email{
+        width: 50%;
     }
-    .sec-intro{
-        background-image: url(../img/parking-image.jpg);
-        opacity: 0.8;
-    }
-    .sec-intro-greet h1 {
-        font-size: 5em;
-        color: #fff;
-        text-shadow: #fff;
-        text-shadow: 6px 9px 4px #000000;
-    }
-    .sec-intro-greet p {
-        color: #fff;
-        text-align: center;
-    }
-} */
+}
 
 @media screen and (max-width: 900px) {
     .header-wrap{
@@ -70,6 +60,7 @@
         display: none;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .section4{
         width: 80%;

@@ -9,6 +9,45 @@
     light-gray: #B3B3B3;
     body: #e4e3ee;
 */
+
+/* Default buttons */
+.btnCustom {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btnCustom:after {
+    content: "";
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btnCustom:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  /* Navbar on scroll */
 .sticky {
     position: fixed;
     top: 0;
@@ -22,6 +61,8 @@
 .custom-tooltip {
     --bs-tooltip-bg: #F58229;
 }
+
+
 body{
     background-color: #e4e3ee;
 }
@@ -104,13 +145,13 @@ li.header-social-item:hover{
     font-size: 3.5em;
     color: #4b5055;
 }
-.section2{
+.section2, .section4{
     background-color: transparent;
     text-align: center;
     margin: 50px auto;
     width: 100%;
 }
-.section2-content{
+.section2-content, .section4-content{
     font-size: 30px;
     color: #4b5055;
 }
@@ -158,39 +199,39 @@ li.header-social-item:hover{
     grid-column: 1 / 2;
     grid-row: 2 / 2;
 }
-.subscribe-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.sub-text{
-    padding: 50px;
+.section5{
     background-color: #fff;
-    height: 300px;
-    width: 100vh;
+    width: 100%;
 }
-.sub-text h2{
+.sub-section{
+    text-align: center;
+    padding: 50px;
     color: #4b5055;
-    font-weight: 900;
-    letter-spacing: 5px;
-    opacity: 0.5;
-    font-size: 2m;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
 }
-.sub-text strong{
-    color:#0D265F;
-    font-size: 30px;
+.sub-section h4{
+    font-weight: bold;
+    font-size: 3em;
 }
-.subscribe-section img{
-    height: 300px;
-    width: 100%;
-}
-.section4{
-    width: 100%;
-    margin: 50px 0;
-    /* background-color: #fff; */
+#sub-email{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #0D265F;
+    width: 30%;
     text-align: center;
 }
-#subBtn{
+#btn-sub{
+    background-color: #fff;
+    color: #0D265F;
+    border: 2px solid #0D265F;
+}
+#btn-sub:hover{
     background-color: #0D265F;
     color: #fff;
+    border: 2px solid #0D265F;
 }
