@@ -23,7 +23,6 @@ function myFunction() {
 const btnSubs = document.querySelector('#btn-sub');
 // Email JS keys
 
-
 btnSubs.addEventListener(
   'click',
   () => {
@@ -39,18 +38,27 @@ btnSubs.addEventListener(
 
     // console.log(tempParams)
     if(!to_name){
-      alert("Please input your email account");
+      swal("Oh No!", "You forgot to enter your email!", "error");
       return false;
     }else{
       emailjs.send(SERVICE_ID, TEMPLATE_ID, tempParams)
       .then(function(response) {
         to_name.value = "";
-        alert('Thank you for subscribing to PMS!')
+        swal("Good job!", "Thank you for subscribing to PMS!", "success");
         console.log('SUCCESS!', response.status, response.text);
       }, function(error) {
         alert('Please try again!')
         console.log('FAILED...', error);
       });
     }
+  }
+)
+
+// goTo Contact Page
+const goToContactPage = document.querySelector('#btnContact');
+goToContactPage.addEventListener(
+  "click",
+  () => {
+    location.href="../pages/contact.html"
   }
 )
