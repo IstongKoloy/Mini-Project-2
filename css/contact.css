@@ -4,12 +4,6 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-/* 
-    orange: #F58229;
-    dark-blue: #0D265F;
-    light-gray: #B3B3B3;
-    body: #e4e3ee;
-*/
 .sticky {
   position: fixed;
   top: 0;
