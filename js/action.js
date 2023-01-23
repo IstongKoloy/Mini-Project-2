@@ -18,3 +18,39 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+// Email Sending by Glenn Andaleon
+const btnSubs = document.querySelector('#btn-sub');
+// Email JS keys
+
+
+btnSubs.addEventListener(
+  'click',
+  () => {
+    const SERVICE_ID = 'service_nrijoer';
+    const TEMPLATE_ID = 'template_ganvqlr';
+
+    const to_name = document.getElementById('sub-email').value;
+
+    const tempParams = {
+      to_email: to_name,
+      from_name: "GSix PMS"
+    };
+
+    // console.log(tempParams)
+    if(!to_name){
+      alert("Please input your email account");
+      return false;
+    }else{
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, tempParams)
+      .then(function(response) {
+        to_name.value = "";
+        alert('Thank you for subscribing to PMS!')
+        console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+        alert('Please try again!')
+        console.log('FAILED...', error);
+      });
+    }
+  }
+)
