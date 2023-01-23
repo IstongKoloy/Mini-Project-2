@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;900&display=swap');
 
 *{
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 /* 
     orange: #F58229;
@@ -10,6 +9,45 @@
     light-gray: #B3B3B3;
     body: #e4e3ee;
 */
+
+/* Default buttons */
+.btnCustom {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .btnCustom:after {
+    content: "";
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .btnCustom:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  /* Navbar on scroll */
 .sticky {
     position: fixed;
     top: 0;
@@ -23,6 +61,8 @@
 .custom-tooltip {
     --bs-tooltip-bg: #F58229;
 }
+
+
 body{
     background-color: #e4e3ee;
 }
@@ -78,40 +118,47 @@ li.header-social-item:hover{
 .navbar{
     background-color: #fff;
 }
+/* .nav-link{
+    font-size: 20px;
+} */
+.nav-link:hover{
+    text-decoration: none;
+}
 .sec-intro{
-    position: relative;
-    /* background-color: #fff; */
+    display: flex;
     background-image: url(../img/parking-image-Copy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
     margin: 3em 0;
     color: #4b5055;
+    align-items: center;
 }
 .sec-intro-greet{
-    width: 50%;
-    text-align: left;
-    position: absolute;
-    top: 70px;
-    left: 5%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    align-items: flex-start;
 }
 .sec-intro-greet h1{
-    font-size: 4em;
+    font-size: 3.5em;
     color: #4b5055;
 }
-.section2{
+.section2, .section4{
     background-color: transparent;
     text-align: center;
-    margin: 20px auto;
+    margin: 50px auto;
+    width: 100%;
 }
-.section2-content{
+.section2-content, .section4-content{
     font-size: 30px;
     color: #4b5055;
 }
 .section3{
     background-color: #fff;
     width: 100%;
-    margin: 30px auto;
+    margin: 50px auto;
     text-align: center;
     padding: 20px;
     color: #4b5055;
@@ -131,6 +178,7 @@ li.header-social-item:hover{
 .icons{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
 }
 .icons i{
     background-color: #0D265F;
@@ -138,9 +186,10 @@ li.header-social-item:hover{
     color: #fff;
     font-size: 4em;
     border-radius: 50%;
-    margin: 10px;
+    margin: auto;
     height: 2em;
     width: 2em;
+    
 }
 .sec3-icon1 i{
     grid-column: 1 / 2;
@@ -149,4 +198,84 @@ li.header-social-item:hover{
 .sec3-icon1 h5{
     grid-column: 1 / 2;
     grid-row: 2 / 2;
+}
+.section5{
+    background-color: #fff;
+    width: 100%;
+}
+.sub-section{
+    text-align: center;
+    padding: 50px;
+    color: #4b5055;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.sub-section h4{
+    font-weight: bold;
+    font-size: 3em;
+}
+#sub-email{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #0D265F;
+    width: 30%;
+    text-align: center;
+}
+#btn-sub{
+    background-color: #fff;
+    color: #0D265F;
+    border: 2px solid #0D265F;
+}
+#btn-sub:hover{
+    background-color: #0D265F;
+    color: #fff;
+    border: 2px solid #0D265F;
+}
+.section6{
+    background-color: #0D265F;
+}
+.goToContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.goToContact .contactText{
+    color: #fff;
+}
+#btnContact{
+    background-color: #fff;
+    color: #0D265F;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+#btnContact:after {
+    content: "";
+    background: #1e4091;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+#btnContact:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }

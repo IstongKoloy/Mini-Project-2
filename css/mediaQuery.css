@@ -1,5 +1,87 @@
+
+@media only screen and (max-width: 1200px) {
+    .section4{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .section4{
+        text-align: center;
+        margin: auto;
+    }
+    .sub-text{
+        width: 100%;
+        text-align: center;
+    }
+    #sub-icon{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .header-wrap{
         display: none;
+    }
+    .icons i{
+        font-size: 3em;
+    }
+    #btnContact{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #sub-email{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sec3-content .sec3-icons {
+        display: flex;
+        flex-direction: column;
+    }
+    #sub-email{
+        width: 70%;
+    }
+    .goToContact{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sec-intro{
+        background-image: url(../img/parking-image.jpg);
+        opacity: 0.8;
+    }
+    .sec-intro-greet {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .sec-intro-greet h1 {
+        font-size: 3em;
+        color: #fff;
+        text-shadow: #fff;
+        text-shadow: 6px 9px 4px #000000;
+    }
+    .sec-intro-greet p {
+        color: #fff;
+        text-align: center;
+    }
+    #sub-email{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .sec-intro-greet h1 {
+        font-size: 2em;
+    }
+    #sub-email{
+        width: 100%;
     }
 }
