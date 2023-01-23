@@ -24,6 +24,17 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="../css/contact.css" />
     <link rel="stylesheet" href="../css/mediaQuery.css" />
+
+    <!--EmailJS-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YOUR_PUBLIC_KEY");
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -137,11 +148,11 @@
 
     <!--FORM-->
     <div class="container">
-      <form action="/action_page.php">
-        <label for="fname">Name</label>
+      <form action="./submitform.html">
+        <label for="name">Name</label>
         <input type="text" id="fname" name="name" placeholder="Your name.." />
 
-        <label for="lname">Email</label>
+        <label for="email">Email</label>
         <input type="text" id="lname" name="email" placeholder="Your email.." />
 
         <label for="subject">Contact Number</label>
