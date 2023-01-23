@@ -24,19 +24,6 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="../css/contact.css" />
     <link rel="stylesheet" href="../css/mediaQuery.css" />
-
-    <!--JS-->
-    <script src="../js/contact-action.js"></script>
-    <!--EmailJS-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("8qkePjJ4cJByXBqW-");
-      })();
-    </script>
     <!--EmailJS2-->
   </head>
   <body>
@@ -174,7 +161,7 @@
           style="height: 200px"
         ></textarea>
 
-        <input type="submit" value="Submit" onclick="SendMail()" />
+        <button class="btn btn-primary" onclick="sendMail()">Submit</button>
       </form>
     </div>
 
@@ -184,5 +171,17 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <!--JS-->
+    <script src="../js/contact-action.js"></script>
+    <!--EmailJS-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("8qkePjJ4cJByXBqW-");
+      })();
+    </script>
   </body>
 </html>
