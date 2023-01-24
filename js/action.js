@@ -47,7 +47,8 @@ btnSubs.addEventListener(
         swal("Good job!", "Thank you for subscribing to PMS!", "success");
         console.log('SUCCESS!', response.status, response.text);
       }, function(error) {
-        alert('Please try again!')
+        swal("Oh No!", "Problem occured, Please try again!", "error");
+        // alert('Please try again!')
         console.log('FAILED...', error);
       });
     }
