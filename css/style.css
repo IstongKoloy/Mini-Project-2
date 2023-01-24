@@ -288,3 +288,13 @@ li.header-social-item:hover{
     color: #0D265F;
     border: 2px inset #0D265F;
 }
+#login{
+    cursor: pointer;
+}
+#registerBtn{
+    cursor: pointer;
+    color: #0d6efd;
+}
+#registerBtn:hover{
+    text-decoration: underline;
+}
