@@ -40,12 +40,8 @@ function validateForm() {
 
 // Submit form function
 function sendForm() {
-  emailjs.send("service_hpk14cj", "template_n92yw9k", {
-    "from_name": name,
-    "from_email": email,
-    "phone": phone,
-    "message": message
-  })
+  emailjs.send("service_hpk14cj", "template_n92yw9k", 
+    {name:name,email:email,phone:phone,message:message})
   .then(function(response) {
     alert("Thank you for your message! We'll get back to you soon.");
     document.getElementById("contact-form").reset();
