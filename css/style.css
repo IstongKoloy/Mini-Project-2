@@ -279,3 +279,12 @@ li.header-social-item:hover{
     opacity: 1;
     transition: 0s
 }
+.swal-button--confirm {
+    background: #0D265F;
+    border: 2px solid #0D265F;
+}
+.swal-button:not([disabled]):hover {
+    background-color: #fff;
+    color: #0D265F;
+    border: 2px inset #0D265F;
+}
