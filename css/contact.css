@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .sticky {
   position: fixed;
@@ -16,8 +18,9 @@
 .custom-tooltip {
   --bs-tooltip-bg: #f58229;
 }
-body {
-  background-color: #e4e3ee;
+body,
+html {
+  overflow-y: hidden;
 }
 header {
   width: 100%;
@@ -102,4 +105,31 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  input,
+  textarea {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-wrap {
+    display: none;
+  }
+  .icons i {
+    font-size: 3em;
+  }
+  #btnContact {
+    font-size: 1em;
+  }
 }
