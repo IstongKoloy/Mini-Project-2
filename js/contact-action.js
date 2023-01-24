@@ -4,8 +4,8 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 // JavaScript validation function
 function validateForm() {
   // Get form input values
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
+  const name = document.getElementById("fName").value;
+  const email = document.getElementById("emailId").value;
   const phone = document.getElementById("phone").value;
   const message = document.getElementById("message").value;
 
@@ -41,10 +41,10 @@ function validateForm() {
 // Submit form function
 function sendForm() {
   emailjs.send("service_hpk14cj", "template_n92yw9k", {
-    "from_name": name,
-    "from_email": email,
-    "phone": phone,
-    "message": message
+    "from_fName": document.getElementById('fName').value,
+    "from_emailId": document.getElementById('emailId').value,
+    "phone": document.getElementById('phone').value,
+    "message": document.getElementById('message').value
   })
   .then(function(response) {
     alert("Thank you for your message! We'll get back to you soon.");
