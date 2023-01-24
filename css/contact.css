@@ -122,7 +122,6 @@ input[type="submit"]:hover {
     width: 90%;
   }
 }
-
 @media screen and (max-width: 900px) {
   .header-wrap {
     display: none;
