@@ -3,9 +3,27 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 
-emailjs.sendForm('service_hpk14cj', 'template_n92yw9k', '#myForm')
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
+function sendMail() {
+   var params = {
+     name: document.getElementById("name").value,
+     email: document.getElementById("email").value,
+     message: document.getElementById("message").value,
+   };
+ 
+   const serviceID = "service_hpk14cj";
+   const templateID = "template_n92yw9k";
+ 
+     emailjs.send(serviceID, templateID, params)
+     .then(res=>{
+         document.getElementById("name").value = "";
+         document.getElementById("email").value = "";
+         document.getElementById("contact").value = "";
+         document.getElementById("message").value = "";
+         console.log(res);
+         alert("Your message sent successfully!!")
+ 
+     })
+     .catch(err=>console.log(err));
+ 
+ }
+ 
