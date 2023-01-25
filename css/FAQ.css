@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  backdrop-filter: blur(100px);
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.custom-tooltip {
+  --bs-tooltip-bg: #f58229;
+}
+body {
+  background-color: #e4e3ee;
+}
+header {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #0d265f;
+}
+.header-item {
+  margin-top: 13px;
+  font-size: 15px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover {
+  text-decoration: underline;
+  color: #f58229;
+  background-color: transparent;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 30px;
+}
+.header-contacts {
+  display: flex;
+  padding: 0 20px;
+  list-style: none;
+}
+li.header-contact-item {
+  margin: 0 20px;
+}
+.header-socials {
+  display: flex;
+  list-style: none;
+}
+li.header-social-item {
+  margin: 0 15px;
+}
+li.header-social-item:hover {
+  transform: translateY(-2px);
+  transition: 0.25s;
+}
+#logo {
+  height: 50px;
+  width: 60px;
+}
+.navbar {
+  background-color: #fff;
+}
+
+
+section {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+.title {
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+
+.faq {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f2f2f2;
+    cursor: pointer; 
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #f2f2f2;
+    
+
+}
+
+.question h3{
+    font-size: 1.8rem;
+    background-color:  #f2f2f2;
+
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: 0.1rem;
+    height: 90%;
+    background-color:#f2f2f2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
+
+}
+
+.faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+
+}
+
+.faq.active svg{
+    transform: rotate (180deg);
+}
+
+svg{
+    transition: transform .5 ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0)
+
+    }
+}
