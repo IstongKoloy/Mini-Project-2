@@ -102,11 +102,18 @@ loginBtn.addEventListener(
       confirmButtonText: 'Sign in',
       footer: "<p>Not yet registered? <a id='registerBtn'>Sign Up</a></p>",
       focusConfirm: false,
+      allowOutsideClick: false,
       preConfirm: () => {
         const login = Swal.getPopup().querySelector('#login').value
         const password = Swal.getPopup().querySelector('#password').value
+
+        const userValue = "admin";
+        const userPass = "admin";
+
         if (!login || !password) {
           Swal.showValidationMessage(`Please enter login and password`)
+        }else if(login != userValue || password != userPass){
+          Swal.showValidationMessage(`User account not found!`)
         }
         return { login: login, password: password }
       }
