@@ -71,7 +71,7 @@ btnSubs.addEventListener(
           icon: 'error',
           title: 'Oops...',
           text: 'Something went wrong!',
-          footer: '<a href="">Please try again!</a>'
+          footer: '<a href="./pages/signUp.html">Please try again!</a>'
         })
         // alert('Please try again!')
         console.log('FAILED...', error);
@@ -90,21 +90,21 @@ goToContactPage.addEventListener(
 )
 
 // login events
-
+/*
 const loginBtn = document.querySelector('#login');
 
 loginBtn.addEventListener(
   "click", () => {
     Swal.fire({
       title: 'Login Form',
-      html: `<input type="text" id="login" class="swal2-input" placeholder="Username">
+      html: `<input type="text" id="login-user" class="swal2-input" placeholder="Username">
       <input type="password" id="password" class="swal2-input" placeholder="Password">`,
       confirmButtonText: 'Sign in',
       footer: "<p>Not yet registered? <a id='registerBtn'>Sign Up</a></p>",
       focusConfirm: false,
       allowOutsideClick: false,
       preConfirm: () => {
-        const login = Swal.getPopup().querySelector('#login').value
+        const login = Swal.getPopup().querySelector('#login-user').value
         const password = Swal.getPopup().querySelector('#password').value
 
         const userValue = "admin";
@@ -134,26 +134,27 @@ loginBtn.addEventListener(
         icon: 'success',
         title: 'Signed in successfully'
       })
-    })    
-  }
-)
-/*
-const signUpBtn = document.querySelector('#registerBtn');
-signUpBtn.addEventListener(
-  "click", () => {
-    Swal.fire({
-      title: 'Registration Form',
-      html: 
-          `<input type="text" id="reg-fName" class="swal2-input" placeholder="First Name">
-          <input type="text" id="reg-lName" class="swal2-input" placeholder="Last Name">
-          <input type="text" id="reg-email" class="swal2-input" placeholder="Email">
-          <input type="password" id="reg-password" class="swal2-input" placeholder="Password">
-          <input type="password" id="reg-confirmPassword" class="swal2-input" placeholder="Confirm password">
-          `
-    }).then((result) => {
-      Swal.fire({
-        
-      })
-    }) 
-  }
-*/
+    })
+  })
+  */
+
+// const usernameClick = document.querySelector('#login-username');
+
+// usernameClick.addEventListener(
+//   "click", () => {
+//     console.log(this.value)
+//   }
+// )
+
+// let loginBtn = document.querySelector('#login');
+// let signUpBtn = document.querySelector('#signUpBtn');
+
+// signUpBtn.addEventListener(
+//   "click", () => {
+//     const loginBody = document.querySelector('.login-body');
+//     const signUpBody = document.querySelector('.signUp-body');
+
+//     loginBody.setAttribute("hidden");
+//     signUpBody.removeAttribute("hidden")
+//   }
+// )
