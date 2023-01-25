@@ -21,7 +21,7 @@ function validateForm() {
   }
 
   // Check if email is empty or not in correct format
-  if (email === "" || !email.includes("@") || !email.endsWith(".com")) {
+  if (email === "" || !email.includes("@")) {
     Swal.fire({
       title: 'Please enter a valid email address.',
       icon: 'error'
