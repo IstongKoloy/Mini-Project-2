@@ -1,137 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us |+63912 345 6789</title>
+    <!-- Icon -->
+    <link rel="icon" href="../PMS/img/logoCopy2.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us |+63912 345 6789</title>
-  <!-- Icon -->
-  <link rel="icon" href="../PMS/img/logoCopy2.png" />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Boostrap icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
 
-  <!-- Bootstrap css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <!-- Boostrap icon css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/contact.css" />
 
-  <!-- Custom css -->
-  <link rel="stylesheet" href="../css/contact.css" />
+    <!--swal-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    !--chatbot-->
+    <script
+      src="//code.tidio.co/ko2qyfbrguok7fkcujmg2xn3ndnswf6w.js"
+      async
+    ></script>
+  </head>
 
-  <!--swal-->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
-
-<body>
-  <header>
-    <div class="container-lg header-wrap">
-      <div class="header-item">
-        <p>Build for Everyone</p>
-      </div>
-      <div class="header-item">
-        <ul class="header-contacts">
-          <li class="header-contact-item">
-            <a href="tel:+639123456789"><i class="bi bi-telephone-fill"></i> +63912 345 6789</a>
-          </li>
-          <li class="header-contact-item">
-            <a href="mailto:gSix@email.com"><i class="bi bi-envelope"></i> gSix@email.com</a>
-          </li>
-        </ul>
-      </div>
-      <div class="header-item d-flex">
-        <i>Follow us on:</i>
-        <ul class="header-socials">
-          <li class="header-social-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
-            data-bs-custom-class="custom-tooltip" data-bs-title="Facebook">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-          </li>
-          <li class="header-social-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
-            data-bs-custom-class="custom-tooltip" data-bs-title="Twitter">
-            <a href="#"><i class="bi bi-twitter"></i></a>
-          </li>
-          <li class="header-social-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
-            data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn">
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
-      <div class="container-lg d-flex">
-        <a class="navbar-brand" href="../index.html"><img src="../PMS/img/logoCopy2.png" alt="" id="logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-            <li class="nav-item px-3">
-              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+  <body>
+    <header>
+      <div class="container-lg header-wrap">
+        <div class="header-item">
+          <p>Build for Everyone</p>
+        </div>
+        <div class="header-item">
+          <ul class="header-contacts">
+            <li class="header-contact-item">
+              <a href="tel:+639123456789"
+                ><i class="bi bi-telephone-fill"></i> +63912 345 6789</a
+              >
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="./feature.html">Features</a>
+            <li class="header-contact-item">
+              <a href="mailto:gSix@email.com"
+                ><i class="bi bi-envelope"></i> gSix@email.com</a
+              >
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="./FAQ.html">FAQ</a>
+          </ul>
+        </div>
+        <div class="header-item d-flex">
+          <i>Follow us on:</i>
+          <ul class="header-socials">
+            <li
+              class="header-social-item"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Facebook"
+            >
+              <a href="#"><i class="bi bi-facebook"></i></a>
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link active" href="./contact.html">Contact Us</a>
+            <li
+              class="header-social-item"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Twitter"
+            >
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li
+              class="header-social-item"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="LinkedIn"
+            >
+              <a href="#"><i class="bi bi-linkedin"></i></a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
-  <div class="row">
-    <div class="col col-md-12">
-      <h2 style="text-align: center; font-size: xxx-large; font-weight: 100">
-        Contact us
-      </h2>
-      <p style="text-align: center">
-        <span style="font-size: 20px; font-weight: 600">How can we help?</span>
-      </p>
-      <p style="text-align: center; font-size: 15x; font-weight: 500">
-        Please fill out the form below so that we can provide you with a quick
-        and efficient service.
-      </p>
+      <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+        <div class="container-lg d-flex">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../PMS/img/logoCopy2.png" alt="" id="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./feature.html">Features</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col col-md-12">
+        <h2 style="text-align: center; font-size: xxx-large; font-weight: 100">
+          Contact us
+        </h2>
+        <p style="text-align: center">
+          <span style="font-size: 20px; font-weight: 600"
+            >How can we help?</span
+          >
+        </p>
+        <p style="text-align: center; font-size: 15x; font-weight: 500">
+          Please fill out the form below so that we can provide you with a quick
+          and efficient service.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <!--FORM-->
-  <div class="container">
-    <form id="contact-form" method="POST" action="javascript:validateForm()">
-      <div class="form-group">
-        <label for="fName">Name</label>
-        <input type="text" class="form-control" id="fName" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="emailId">Email</label>
-        <input type="email" class="form-control" id="emailId" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone</label>
-        <input type="tel" class="form-control" id="phone" name="phone" required />
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-  <!-- Bootstrap js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <!--JS-->
-  <script src="../js/contact-action.js"></script>
-  <!--EmailJS-->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    emailjs.init("8qkePjJ4cJByXBqW-");
-  </script>
-  <!--Swal-->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
-
+    <!--FORM-->
+    <div class="container">
+      <form id="contact-form" method="POST" action="javascript:validateForm()">
+        <div class="form-group">
+          <label for="fName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fName"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="emailId">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailId"
+            name="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            name="phone"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!--JS-->
+    <script src="../js/contact-action.js"></script>
+    <!--EmailJS-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init("8qkePjJ4cJByXBqW-");
+    </script>
+    <!--Swal-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
 </html>
