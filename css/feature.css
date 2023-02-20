@@ -118,10 +118,18 @@ li.header-social-item:hover {
 
 /* feature */
 
-/* .feature-list {
-  background: #0D265F;
-
- } */
+.feature-list h1 {
+  font-family: "EB Garamond", serif;
+  font-family: "Itim", cursive;
+  font-family: "Labrada", serif;
+  color: rgb(12, 12, 97);
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  margin: 50px 0px 30px 0px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
 
 div {
   display: block;
@@ -153,16 +161,6 @@ div {
 
 .feature-divider {
   margin: 50px 0px;
-}
-
-.feature-list h1 {
-  color: rgb(12, 12, 97);
-  padding-bottom: 50px;
-  text-align: center;
-  font-weight: bold;
-  margin: 50px 0px 30px 0px;
-  text-transform: uppercase;
-  letter-spacing: 8px;
 }
 
 h2 {
