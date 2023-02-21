@@ -1,19 +1,43 @@
-<nav class="nav nav-pills nav-fill">
-    <a class="nav-link active" aria-current="page" id="login-modal">LOGIN</a>
-    <a class="nav-link" id="register-modal">SIGN UP</a>
-</nav>
-
-<div class="login-page">
-    <div>
-        <label for="username">Username</label>
-        <input type="text" id="username">
+<div class="login-header">
+    
+    <div class="login-navigator">
+        <span class="logNav-item active" id="loginBtn"><i class="bi bi-person"></i> Login</span>
+        <span class="logNav-item" id="signUpBtn"><i class="bi bi-person-add"></i> Sign Up</span>
     </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password">
+
+</div>
+
+
+<div class="login-body">
+    <div class="inputGroup">   
+        <label for="login-username" class="login-label">Email</label>
+        <input type="text" id="login-username" class="login-inputs">
+    </div>
+    <div class="inputGroup">   
+        <label for="login-password" class="login-label">Password</label>
+        <input type="password" id="login-password" class="login-inputs">
     </div>
 </div>
 
-<div class="register-page">
-
+<div class="signUp-body" hidden>
+    <div class="signUP-inputGroup sign1">   
+        <label for="signUp-fName" class="signUp-label">First Name</label>
+        <input type="text" id="signUp-fName" class="signUp-inputs">
+    </div>
+    <div class="signUP-inputGroup sign2">   
+        <label for="signUp-lName" class="signUp-label">Last Name</label>
+        <input type="text" id="signUp-lName" class="signUp-inputs">
+    </div>
+    <div class="signUP-inputGroup sign3">   
+        <label for="signUp-email" class="signUp-label">Email</label>
+        <input type="text" id="signUp-email" class="signUp-inputs">
+    </div>
+    <div class="signUP-inputGroup sign4">   
+        <label for="signUp-password" class="signUp-label">Password</label>
+        <input type="text" id="signUp-password" class="signUp-inputs">
+    </div>
+    <div class="signUP-inputGroup sign5">   
+        <label for="signUp-confirmPassword" class="signUp-label">Confirm Password</label>
+        <input type="text" id="signUp-confirmPassword" class="signUp-inputs">
+    </div>
 </div>

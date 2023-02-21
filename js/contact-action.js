@@ -1,50 +1,46 @@
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
 // JavaScript validation function
 function validateForm() {
   // Get form input values
-  const name = document.getElementById("fName").value;
-  const email = document.getElementById("emailId").value;
-  const phone = document.getElementById("phone").value;
-  const message = document.getElementById("message").value;
+  const name = document.getElementById("fName");
+  const email = document.getElementById("emailId");
+  const phone = document.getElementById("phone");
+  const message = document.getElementById("message");
 
   let isValid = true;
 
   // Check if name is empty
-  if (name === "") {
-    Swal.fire({
-      title: 'Name field is required.',
-      icon: 'error'
-    });
+  if (name.value === "") {
+    name.style.borderColor = "red";
     isValid = false;
+  } else {
+    name.style.borderColor = "";
   }
 
   // Check if email is empty or not in correct format
-  if (email === "" || !email.includes("@") || !email.endsWith(".com")) {
-    Swal.fire({
-      title: 'Please enter a valid email address.',
-      icon: 'error'
-    });
+  if (email.value === "" || !email.value.includes("@")) {
+    email.style.borderColor = "red";
     isValid = false;
+  } else {
+    email.style.borderColor = "";
   }
 
   // Check if phone number is empty or not in correct format
-  if (phone === "" || phone.length < 10 || phone.length > 12) {
-    Swal.fire({
-      title: 'Please enter a valid phone number (10-12 digits).',
-      icon: 'error'
-    });
+  if (phone.value === "" || phone.value.length < 10 || phone.value.length > 12) {
+    phone.style.borderColor = "red";
     isValid = false;
+  } else {
+    phone.style.borderColor = "";
   }
 
   // Check if message is empty
-  if (message === "") {
-    Swal.fire({
-      title: 'Message field is required.',
-      icon: 'error'
-    });
+  if (message.value === "") {
+    message.style.borderColor = "red";
     isValid = false;
+  } else {
+    message.style.borderColor = "";
   }
 
   if (isValid) {
@@ -55,18 +51,14 @@ function validateForm() {
   return isValid;
 }
 
-
-
 // Submit form function
-
 function sendForm() {
   emailjs.send("service_hpk14cj", "template_n92yw9k", {
     "from_fName": document.getElementById('fName').value,
     "from_emailId": document.getElementById('emailId').value,
     "phone": document.getElementById('phone').value,
     "message": document.getElementById('message').value
-  })
-  .then(function(response) {
+  }).then(function(response) {
     // Show success alert
     Swal.fire({
       position: 'center',
@@ -84,7 +76,7 @@ function sendForm() {
       toast: true,
       position: 'top-end',
       showConfirmButton: false,
-      timer: 3000,
+      timer: 3000
     });
   });
 }

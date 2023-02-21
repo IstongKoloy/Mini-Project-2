@@ -84,4 +84,7 @@
     #sub-email{
         width: 100%;
     }
+    .modal{
+        top: 100px;
+    }
 }
