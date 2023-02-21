@@ -1,314 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parking Management System</title>
 
     <!-- Icon -->
     <link rel="icon" href="../PMS/img/logoCopy.png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
     <!-- Boostrap icon css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-    
-    <!-- aos scroll css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
     <!-- css -->
-    <link rel="stylesheet" href="../css/feature.css">
-</head>
+    <link rel="stylesheet" href="../css/feature.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container-lg header-wrap">
-            <div class="header-item">
-                <p>Build for Everyone</p>
-            </div>
-
-            <div class="header-item">
-                <ul class="header-contacts">
-                    <li class="header-contact-item">
-                        <a href="tel:+639123456789"><i class="bi bi-telephone-fill"></i> +63912 345 6789</a>
-                    </li>
-                    <li class="header-contact-item">
-                        <a href="mailto:gSix@email.com"><i class="bi bi-envelope"></i> gSix@email.com</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header-item d-flex">
-                <i>Follow us on:</i>
-                <ul class="header-socials">
-                    <li class="header-social-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="Facebook">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li class="header-social-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="Twitter">
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                    </li>
-                    <li class="header-social-item" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn">
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
+    <div class="whole">
+      <div class="container-lg header-wrap">
+        <div class="header-item">
+          <p>Build for Everyone</p>
         </div>
-        <!-- Bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-        <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
-            <div class="container-lg d-flex">
-                <a class="navbar-brand" href=".././"><img src="../PMS/img/logoCopy2.png" alt="" id="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-3">
-                            <a class="nav-link " aria-current="page" href=".././">Home</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="./feature.html">Features</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="./FAQ.html">FAQ</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="./contact.html">Contact Us</a>
-                        </li>
-                        <!-- <li class="nav-item px-3">
-                            <a class="nav-link" href="#">Login / Sign up</a>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+        <div class="header-item">
+          <ul class="header-contacts">
+            <li class="header-contact-item">
+              <a href="tel:+639123456789"
+                ><i class="bi bi-telephone-fill"></i> +63912 345 6789</a
+              >
+            </li>
+            <li class="header-contact-item">
+              <a href="mailto:gSix@email.com"
+                ><i class="bi bi-envelope"></i> gSix@email.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header-item d-flex">
+          <i>Follow us on:</i>
+          <ul class="header-socials">
+            <li
+              class="header-social-item"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Facebook"
+            >
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li
+              class="header-social-item"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="Twitter"
+            >
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li
+              class="header-social-item"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="LinkedIn"
+            >
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Bootstrap js -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+      <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+        <div class="container-lg d-flex">
+          <a class="navbar-brand" href="./"
+            ><img src="../PMS/img/logoCopy2.png" alt="" id="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" href="./feature.html">Features</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./FAQ.html">FAQ</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="./login_modal.html"
+                  >Login / Sign up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-
-    <div class="container feature-list">
-
-        <h1>GSIX Parking Management System - Features</h1>
-
-
-        <div class="row featurette" data-aos="fade-left">
-
-            <div class="col-md-4 col-md-pull-7">
-                <img class="img-thumbnail img-responsive center-block right" src="../img/feature/register.png">
-            </div>
-
-            <div class="col-md-7 col-md-push-4">
-                <h2 class="feature-heading text-center">User registration</h2>
-                <div class="paragraph text-center">Users should be able to register on the website and create a profile.
-                </div>
-            </div>
-
-
-        </div>
-        <hr class="feature-divider">
-
-        <div class="row featurette" data-aos="fade-right">
-            <div class="col-md-7">
-                <h2 class="feature-heading text-center" >Parking usage tracking </h2>
-                <div class="paragraph text-center">Users should be able to track their parking usage and view their current balance.</div>
-            </div>
-
-
-            <div class="col-md-4">
-                <img class="img-thumbnail img-responsive center-block" src="../img/feature/tracker.jpg">
-            </div>
-        </div>
-        <hr class="feature-divider">
-
-        <div class="row featurette" data-aos="fade-left">
-
-            <div class="col-md-4 col-md-pull-7">
-                <img class="img-thumbnail img-responsive center-block right" src="../img/feature/regulations.jpg">
-            </div>
-
-            <div class="col-md-7 col-md-push-4">
-                <h2 class="feature-heading text-center">Parking regulations</h2>
-                <div class="paragraph text-center">The website should clearly outline the regulations and policies of the parking management system.
-                </div>
-            </div>
-
-
-        </div>
-        <hr class="feature-divider">
+    <div class="feature-list">
+      <h1>
         
+        <u>GSIX Parking Management System - Features</u>
+      
+      </h1>
+    </div>
+    
+    <br /><br />
 
-        <div class="row featurette" data-aos="fade-right">
-            <div class="col-md-7">
-                <h2 class="feature-heading text-center" >Access Control System</h2>
-                <div class="paragraph text-center">Integrate parking passes with access control system - boom barriers,
-                    biometrics, etc.</div>
-            </div>
-
-
-            <div class="col-md-4">
-                <img class="img-thumbnail img-responsive center-block" src="../img/feature/accessControl.jpg">
-            </div>
+<div class="container">
+      <div class="row featurette">
+        <div class="col-md-5 col-md-pull-7">
+          <img
+            class="img-thumbnail img-responsive center-block right"
+            src="../img/feature/register.png"
+          />
         </div>
-        <hr class="feature-divider">
 
-
-        <div class="row featurette" data-aos="fade-left">
-
-            <div class="col-md-4 col-md-pull-7">
-                <img class="img-thumbnail img-responsive center-block right" src="../img/feature/qrcode.png">
-            </div>
-
-            <div class="col-md-7 col-md-push-4">
-                <h2 class="feature-heading text-center">Auto-Generated Passes</h2>
-                <div class="paragraph text-center">QR code-based passes are instantly auto-generated for a visitor.
-                </div>
-            </div>
-
-
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="feature-heading text-center">User registration</h2>
+          <div class="paragraph text-center">
+            Users should be able to register on the website and create a
+            profile.
+          </div>
         </div>
-        <hr class="feature-divider">
+      </div>
+      <hr class="feature-divider" />
 
-
-        <div class="row featurette" data-aos="fade-right">
-            <div class="col-md-7">
-                <h2 class="feature-heading text-center">Customize Spaces</h2>
-                <div class="paragraph text-center">Customize & reserve parking space as per company, staff, pay-&-park,
-                    etc.</div>
-            </div>
-
-            <div class="col-md-4">
-                <img class="img-thumbnail img-responsive center-block" src="../img/feature/customizeSpaces.jpg">
-            </div>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="feature-heading text-center">Parking usage tracking</h2>
+          <div class="paragraph text-center">
+            Users should be able to track their parking usage and view their
+            current balance.
+          </div>
         </div>
-        <hr class="feature-divider">
 
-
-        <div class="row featurette" data-aos="fade-left">
-
-            <div class="col-md-4 col-md-pull-7" data-aos="fade-left">
-                <img class="img-thumbnail img-responsive center-block right" src="../img/feature/monthlyPay.png">
-            </div>
-            <div class="col-md-7 col-md-push-4">
-                <h2 class="feature-heading text-center">On-Spot Or Monthly Pay</h2>
-                <div class="paragraph text-center">Parking passes generated can be on pay-&-park or a monthly pay basis.
-                    It is FASTag enabled.</div>
-            </div>
-
-
+        <div class="col-md-5">
+          <img
+            class="img-thumbnail img-responsive center-block"
+            src="../img/feature/tracker.jpg"
+          />
         </div>
-        <hr class="feature-divider">
+      </div>
+      <hr class="feature-divider" />
 
-
-        <div class="row featurette"  data-aos="fade-right">
-            <div class="col-md-7">
-                <h2 class="feature-heading text-center">Slots Per Vehicle Type</h2>
-                <div class="paragraph tex-center">Allocate slots as per two-wheeler and four-wheeler vehicles to utilise
-                    all available space.</div>
-            </div>
-
-            <div class="col-md-5">
-                <img class="img-thumbnail img-responsive center-block" src="../img/feature/slots.webp">
-            </div>
+      <div class="row featurette">
+        <div class="col-md-5 col-md-pull-7">
+          <img
+            class="img-thumbnail img-responsive center-block right"
+            src="../img/feature/regulations.jpg"
+          />
         </div>
-        <hr class="feature-divider">
 
-
-        <div class="row featurette" data-aos="fade-left">
-
-            <div class="col-md-4 col-md-pull-7">
-                <img class="img-thumbnail img-responsive center-block right" src="../img/feature/liveReport.jpg">
-            </div>
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="feature-heading text-center">View Live Reports</h2>
-                <div class="paragraph text-center">No more manual checking of empty space. View it on your phone. Also
-                    view live reports.</div>
-            </div>
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="feature-heading text-center">Parking regulations</h2>
+          <div class="paragraph text-center">
+            The website should clearly outline the regulations and policies of
+            the parking management system.
+          </div>
         </div>
-        <hr class="feature-divider">
+      </div>
+      <hr class="feature-divider" />
 
-        <div class="row featurette"  data-aos="fade-right">
-            <div class="col-md-7">
-                <h2 class="feature-heading text-center">Additional Charge Free</h2>
-                <div class="paragraph tex-center">No additional charge for accepting credit card payments (over 70 online payment gateways are supported)</div>
-            </div>
-
-            <div class="col-md-5">
-                <img class="img-thumbnail img-responsive center-block" src="../img/feature/creditCard.webp">
-            </div>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="feature-heading text-center">Access Control System</h2>
+          <div class="paragraph text-center">
+            Integrate parking passes with access control system - boom barriers,
+            biometrics, etc.
+          </div>
         </div>
-        <hr class="feature-divider">
 
-        <div class="row featurette" data-aos="fade-left">
-
-            <div class="col-md-4 col-md-pull-7">
-                <img class="img-thumbnail img-responsive center-block right" src="../img/feature/mail.jpg">
-            </div>
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="feature-heading text-center">Mail Update</h2>
-                <div class="paragraph text-center">Automated mailing to clients (before / after stay, after reserving etc.)</div>
-            </div>
+        <div class="col-md-5">
+          <img
+            class="img-thumbnail img-responsive center-block"
+            src="../img/feature/accessControl.jpg"
+          />
         </div>
-        <hr class="feature-divider">
+      </div>
+      <hr class="feature-divider" />
 
-        <div class="row featurette"  data-aos="fade-right">
-            <div class="col-md-7">
-                <h2 class="feature-heading text-center">Administrative functions</h2>
-                <div class="paragraph tex-center">The website should have a section for administrative tasks such as managing parking spots, rules, and rates.</div>
-            </div>
-
-            <div class="col-md-5">
-                <img class="img-thumbnail img-responsive center-block" src="../img/feature/adminFnctn.png">
-            </div>
+      <div class="row featurette">
+        <div class="col-md-5 col-md-pull-7">
+          <img
+            class="img-thumbnail img-responsive center-block right"
+            src="../img/feature/qrcode.png"
+          />
         </div>
-        <hr class="feature-divider">
 
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="feature-heading text-center">Auto-Generated Passes</h2>
+          <div class="paragraph text-center">
+            QR code-based passes are instantly auto-generated for a visitor.
+          </div>
+        </div>
+      </div>
+      <hr class="feature-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="feature-heading text-center">Customize Spaces</h2>
+          <div class="paragraph text-center">
+            Customize & reserve parking space as per company, staff, pay-&-park,
+            etc.
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <img
+            class="img-thumbnail img-responsive center-block"
+            src="../img/feature/customizeSpaces.jpg"
+          />
+        </div>
+      </div>
+      <hr class="feature-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-5 col-md-pull-7">
+          <img
+            class="img-thumbnail img-responsive center-block right"
+            src="../img/feature/monthlyPay.png"
+          />
+        </div>
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="feature-heading text-center">On-Spot Or Monthly Pay</h2>
+          <div class="paragraph text-center">
+            Parking passes generated can be on pay-&-park or a monthly pay
+            basis. It is FASTag enabled.
+          </div>
+        </div>
+      </div>
+      <hr class="feature-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="feature-heading text-center">Slots Per Vehicle Type</h2>
+          <div class="paragraph tex-center">
+            Allocate slots as per two-wheeler and four-wheeler vehicles to
+            utilise all available space.
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <img
+            class="img-thumbnail img-responsive center-block"
+            src="../img/feature/slots.webp"
+          />
+        </div>
+      </div>
+      <hr class="feature-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-5 col-md-pull-7">
+          <img
+            class="img-thumbnail img-responsive center-block right"
+            src="../img/feature/liveReport.jpg"
+          />
+        </div>
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="feature-heading text-center">View Live Reports</h2>
+          <div class="paragraph text-center">
+            No more manual checking of empty space. View it on your phone. Also
+            view live reports.
+          </div>
+        </div>
+      </div>
+      <hr class="feature-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="feature-heading text-center">Additional Charge Free</h2>
+          <div class="paragraph tex-center">
+            No additional charge for accepting credit card payments (over 70
+            online payment gateways are supported)
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <img
+            class="img-thumbnail img-responsive center-block"
+            src="../img/feature/creditCard.webp"
+          />
+        </div>
+      </div>
+      <hr class="feature-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-5 col-md-pull-7">
+          <img
+            class="img-thumbnail img-responsive center-block right"
+            src="../img/feature/mail.jpg"
+          />
+        </div>
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="feature-heading text-center">Mail Update</h2>
+          <div class="paragraph text-center">
+            Automated mailing to clients (before / after stay, after reserving
+            etc.)
+          </div>
+        </div>
+      </div>
+      <hr class="feature-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="feature-heading text-center">Administrative functions</h2>
+          <div class="paragraph tex-center">
+            The website should have a section for administrative tasks such as
+            managing parking spots, rules, and rates.
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <img
+            class="img-thumbnail img-responsive center-block"
+            src="../img/feature/adminFnctn.png"
+          />
+        </div>
+      </div>
+      <hr class="feature-divider" />
     </div>
 
+
     <section class="section5">
-        <div class="sub-section container-lg">
-          <h4>Stay up to date!</h4>
-          <p>Want to be the first informed about the hottest discounts and promotions?</p>
-          <p>Subscribe Now!</p>
-          <input type="text" id="sub-email" placeholder="Enter your email here..">
-          <button id="btn-sub" class="btn btnCustom">Subscribe</button>
-        </div>
-      </section>
+      <div class="sub-section container-lg">
+        <h4>Stay up to date!</h4>
+        <p>
+          Want to be the first informed about the hottest discounts and
+          promotions?
+        </p>
+        <p>Subscribe Now!</p>
+        <input
+          type="text"
+          id="sub-email"
+          placeholder="Enter your email here.."
+        />
+        <button id="btn-sub" class="btn btnCustom">Subscribe</button>
+      </div>
+    </section>
+</div>
 
     <section class="section6">
-        <div class="goToContact container-lg">
-          <div class="contactText">
-            <h3>Ready to find out more?</h3>
-            <p>Drop a message. We'll make sure your time is well spent.</p>
-          </div>
-          <div>
-            <button id="btnContact">Contact us</button>
-          </div>
+      <div class="goToContact container-lg">
+        <div class="contactText">
+          <h3>Ready to find out more?</h3>
+          <p>Drop a message. We'll make sure your time is well spent.</p>
         </div>
-      </section>
+        <div>
+          <button id="btnContact">Contact us</button>
+        </div>
+      </div>
+    </section>
+
+
+<!-- js -->
+
+<script src="../js/feature.js"></script>
 
     <!-- Bootstrap js -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-  crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- aos scroll js -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    AOS.init();
-  </script>
-
-    <!-- js -->
+    <!-- from index js -->
     <!-- <script src="./js/feature.js"></script> -->
-</body>
 
+    <script src="../js/action.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("BeWBBBkzlxxaYx4Ee");
+    </script>
+    
+  </body>
 </html>
